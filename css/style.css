@@ -22,6 +22,7 @@ main{
   top: 0;
   left: 0;
   width: 100%;
+
 }
 
 .container{
@@ -41,7 +42,7 @@ main{
 }
 
 .header-content h1, .intro-content h1, .contact-section h1{
-  font-size: 42px;
+  font-size: 40px;
 }
 
 .header-content h2 span{
@@ -94,12 +95,12 @@ main{
 .intro-text p{
   text-align: justify;
   color: #828282;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .services{
   background-color: #f1c11a;
-  height: 50vh;
+  height: 70vh;
   clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
   margin-top: -15vh;
 }
@@ -119,6 +120,7 @@ main{
   color: #000000;
   text-align: justify;
   line-height: 25px;
+  font-size: 15px;
 }
 
 .contact{
@@ -157,33 +159,352 @@ footer{
   padding-bottom: 30px;
 }
 
+/*..................................Responsive(iphone/iphone pro).......................................*/
+
 @media screen and (max-width: 768px){
   .header-content h2{
     font-size: 20px;
+    justify-content: center;
   }
+
+
+.header-content h1, .intro-content h1, .contact-section h1{
+  font-size: 25px;
 
   .intro-content{
     display: block;
     height: 90vh;
+
+
   }
 
   .intro-content div{
     width: 100%;
   }
 
+  .intro h1{
+    text-align: center;
+  }
+
   .services{
-    height: 100vh;
+    height: 75vh;
     clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
   }
 
   .service-content{
     display: block;
-    margin-top: -15vh;
+    margin-top: -35vh;
     padding-top: 1px;
   }
 
   .bucket{
     width: 100%;
-    margin: 80px 3%;
+    margin: 40px 3%;
+
   }
+
+  footer{
+   clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+   padding-bottom: 0px;
+   padding-top: -13vh;
+   margin-top: -60px;
 }
+
+}
+
+/*......................Responsive Design(iphone X/Galaxy s5/).................*/
+
+
+
+@media screen and (max-width: 414px){
+/* Header contents */
+
+.header{
+  height: 85vh;
+ 
+  }
+
+.header-content{
+    padding-top: 80px;
+    font-size: 30px;
+  }
+
+.header-content h1{
+   
+    font-size: 27px;
+  }
+
+.header-content h2{
+    font-size: 9px;
+    line-height: 5px; }
+
+.header-content a {
+    font-size: 12px;
+    margin-right: 2px;
+    padding: 12px 17px;
+    margin-right: 10px; 
+}
+
+
+/* Introduction part */
+
+.intro-content{
+    display: block;
+    height: 104vh;
+  }
+
+.intro-content div{
+    width: 100%;
+  }
+
+
+.intro-text h1{
+
+  font-size: 28px;
+  text-align: center;
+
+}
+
+.intro-text p{
+ 
+  line-height:23px;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+
+
+/* services part */
+
+.services{
+    height: 108vh;
+    clip-path: polygon(0 0, 15% 0, 50% 4%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top: -9vh;
+   }
+
+ .service-content{
+   display: flex;
+   flex-wrap: wrap;
+   
+    margin-top: -35vh;
+    padding-top: 50px;
+   
+  }
+
+.bucket{
+    width: 100%;
+    height: 34vh;
+    margin: 4px 1%;
+   
+  }
+
+.bucket p{
+   font-size: 14px;
+   line-height: 18px;
+}
+
+.bucket h1{
+   
+    font-size: 18px;
+  }
+
+
+
+
+
+/* contacts*/
+
+.contact h1{
+   font-size: 25px;
+}
+
+
+.contact{
+ 
+  padding: 8vh 0;
+  
+}
+
+input[type='text'], input[type=email], textarea{
+  width: 100%;
+  padding: 10px;
+  border-color: 1px solid #cccccc;
+}
+
+.contact-section div{
+  padding: 10px 3%;
+}
+
+.btn-submit{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-submit:hover{
+  background-color: #f1c11a;
+  border-color: transparent;
+  color: #000000;
+}
+
+footer{
+  background-color: #f1c11a;
+  clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  margin-top: -5vh;
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 30px;
+}
+
+
+
+}
+
+
+/*......................Responsive Design(iphone5-SE  ).................*/
+
+
+
+@media screen and (max-width: 320px){
+/* Header contents */
+
+.header{
+  height: 85vh;
+ 
+  }
+
+.header-content{
+    padding-top: 80px;
+    font-size: 30px;
+  }
+
+.header-content h1{
+   
+    font-size: 27px;
+  }
+
+.header-content h2{
+    font-size: 9px;
+    line-height: 5px; }
+
+.header-content a {
+    font-size: 12px;
+    margin-right: 2px;
+    padding: 12px 17px;
+    margin-right: 10px; 
+}
+
+
+/* Introduction part */
+
+.intro-content{
+    display: block;
+    height: 104vh;
+  }
+
+.intro-content div{
+    width: 100%;
+  }
+
+
+.intro-text h1{
+
+  font-size: 28px;
+  text-align: center;
+
+}
+
+.intro-text p{
+ 
+  line-height:23px;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+
+
+/* services part */
+
+.services{
+    height: 130vh;
+    clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top: 16vh;
+   }
+
+ .service-content{
+   display: flex;
+   flex-wrap: wrap;
+   
+    margin-top: -30vh;
+    padding-top: 50px;
+   
+  }
+
+.bucket{
+    width: 100%;
+    height: 34vh;
+    margin: 15px 1%;
+   
+  }
+
+.bucket p{
+   font-size: 14px;
+   line-height: 18px;
+}
+
+.bucket h1{
+   
+    font-size: 18px;
+  }
+
+
+
+
+
+/* contacts*/
+
+.contact h1{
+   font-size: 25px;
+}
+
+
+.contact{
+ 
+  padding: 8vh 0;
+  
+}
+
+input[type='text'], input[type=email], textarea{
+  width: 100%;
+  padding: 10px;
+  border-color: 1px solid #cccccc;
+}
+
+.contact-section div{
+  padding: 10px 3%;
+}
+
+.btn-submit{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-submit:hover{
+  background-color: #f1c11a;
+  border-color: transparent;
+  color: #000000;
+}
+
+footer{
+  background-color: #f1c11a;
+  clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  margin-top: -5vh;
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 30px;
+}
+
+
+
+}
+
+
